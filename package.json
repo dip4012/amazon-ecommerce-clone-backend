@@ -2,7 +2,7 @@
 	"name": "backend",
 	"description": "Backend for amazon clone app",
 	"scripts": {
-		"start": "npm run shell"
+		"start": "node index.js"
 	},
 	"engines": {
 		"node": "16"
