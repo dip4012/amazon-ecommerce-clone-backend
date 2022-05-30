@@ -56,7 +56,4 @@ app.get("/payment/:id", async (req, res) => {
 });
 
 // Listen command
-app.listen(
-	process.env.PORT || 1337,
-	console.log("Server connected at port 1337")
-);
+app.listen(process.env.PORT || 1337, console.log("Server connected"));
