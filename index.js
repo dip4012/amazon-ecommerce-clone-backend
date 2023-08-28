@@ -16,7 +16,7 @@ const razorpay = new Razorpay({
 
 // Middlewares
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({origin: '*'}));
 app.use(express.json());
 
 // API routes
