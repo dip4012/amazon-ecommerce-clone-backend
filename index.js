@@ -34,6 +34,7 @@ app.post("/razorpay/create", async (req, res) => {
 
 		res.json(response)
 	} catch (error) {
+		console.log("/razorpay/create")
 		console.log(error)
 	}
 })
@@ -54,6 +55,7 @@ app.post("/verification", (req, res) => {
 		}
 		res.json({ status: "ok" })
 	} catch (error) {
+		console.log("/verification")
 		console.log(error)
 	}
 })
@@ -64,6 +66,7 @@ app.get("/payment/:id", async (req, res) => {
 		const payment = await razorpay.payments.fetch(payment_id)
 		res.json(payment)
 	} catch (error) {
+		console.log("/payment/:id")
 		console.log(error)
 	}
 })
